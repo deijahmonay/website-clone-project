@@ -50,6 +50,54 @@ A fully responsive multipage website built with **Bootstrap 5**, **HTML5**, and 
 
 ---
 
+# 🧩 Sample JavaScript Functions for Future Development 
+
+function validateEmail(email) {             
+  return email.includes("@") && email.includes(".");
+}
+
+^Email validation  check — returns `true` if the string contains “@” **and** “.” ^
+
+---
+
+let memberMessages = [];
+function addMemberMessage(message) {
+  memberMessages.push(message);
+  return `Thanks for sharing: "${message}"`;
+}
+
+^Function to store Member feedback in an array and returns a friendly thank you in a string - Good for management to know ^
+
+---
+
+/* 3) List space amenities */
+function listAmenities() {
+  let amenities = ["Kafe", "Bar", "Complimentary Tea", "Meeting Rooms", "Bay Views"];
+  return "Our amenities include: " + amenities.join(", ");
+}
+
+^Function that returns a string of the different amenities offered in the space - Good for guests visiting site ^
+
+---
+
+/* 4) Count event attendees */
+function countMembers(members) {
+  return members.length;
+}
+
+^Function to count how many members are attending a specific event - Good for staffing + F&B ^
+
+---
+
+/* 5) Combine first + last names */
+function fullName(first, last) {
+  return first + " " + last;
+}
+
+^Function to combine first + last name - Good for Membership outreach ^
+
+--- 
+
 ## 📌 Folder Structure
 
 ```
